@@ -2,6 +2,7 @@ const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn");
 const linkContainer = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
+const tabBtn = document.getElementById("tab-btn")
 
 document.addEventListener("DOMContentLoaded", getLinks)
 inputBtn.addEventListener("click", addlink)
@@ -93,6 +94,33 @@ function removeLocalLinks(link) {
     localStorage.setItem("links", JSON.stringify(links))
 }
 
-deleteBtn.addEventListener("dblclick", ()=>{
+deleteBtn.addEventListener("dblclick", ()=> {
+    localStorage.clear()
+    links = []
+    linkContainer.innerText = ''
+})
+
+tabBtn.addEventListener("click", function () {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        const linkDiv = document.createElement("div")
+        linkDiv.classList.add("link")
+
+        const newLink = document.createElement("li")
+        newLink.classList.add("link-item")
+        newLink.innerHTML = `<a href=${tabs[0].url}
+    translate="_blank">${tabs[0].url}</a>`
+        linkDiv.appendChild(newLink);
+
+        saveLocalLinks(tabs[0].url)
+
+        const deleteLink = document.createElement("span");
+        deleteLink.innerHTML = `<i class="fa-regular fa-circle-xmark"></i>`
+        deleteLink.classList.add("delete-link")
+        linkDiv.appendChild(deleteLink)
+
+        linkContainer.appendChild(linkDiv)
+
+        inputEl.value = ''
     
+    })
 })
