@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
     <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,11 +14,13 @@
 </head>
 <body>
     <section class="section">
-        <nav class="navbar">
-            <a href="extension.html" class="navbar-link">Extension</a>
-            <a href="#todo.html" class="navbar-link">ToDo</a>
-            <a href="#" class="navbar-link">Weather</a>
-            <a href="#" class="navbar-link">About Us</a>
+        <nav id="nav">
+            <ul class="nav-links">
+                <li><a href="./tab.html" >Tab</a></li>
+                <li><a href="todo.html" class="active">Note</a></li>
+                <li><a href="">Weather</a></li>
+                <li><a href="">Color</a></li>
+            </ul>
         </nav>
         <header>
             <h1>To Do List</h1>
