@@ -1,6 +1,7 @@
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn");
 const linkContainer = document.getElementById("ul-el")
+const deleteBtn = document.getElementById("delete-btn")
 
 document.addEventListener("DOMContentLoaded", getLinks)
 inputBtn.addEventListener("click", addlink)
@@ -91,3 +92,7 @@ function removeLocalLinks(link) {
 
     localStorage.setItem("links", JSON.stringify(links))
 }
+
+deleteBtn.addEventListener("dblclick", ()=>{
+    
+})
