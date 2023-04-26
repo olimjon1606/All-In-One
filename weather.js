@@ -18,7 +18,7 @@ let weather = {
         document.querySelector(".humidity").innerText =" " + humidity + "%";
         document.querySelector(".wind").innerText =" " + speed + "km/h";
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/500x1000/?nature, " + name +"')";
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/500x550/?nature, " + name +"')";
         
     },
     search: function(){
