@@ -4,15 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #222;
-    font-family: 'Open Sans', sans-serif;
-    color: #ddd;
-} */
 body {
     background-position: center;
     background-repeat: no-repeat;
