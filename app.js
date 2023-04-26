@@ -95,7 +95,7 @@ function removeLocalLinks(link) {
 }
 
 deleteBtn.addEventListener("dblclick", ()=> {
-    localStorage.clear()
+    localStorage.removeItem("links")
     links = []
     linkContainer.innerText = ''
 })
