@@ -24,7 +24,7 @@ let weather = {
     search: function(){
         let searchValue= document.querySelector(".search-bar").value;
         this.fetchWeather(searchValue);
-        localStorage.removeItem()
+        localStorage.removeItem("cities")
         localStorage.setItem("cities", searchValue)
     },
 
