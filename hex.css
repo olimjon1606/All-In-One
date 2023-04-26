@@ -81,6 +81,7 @@ h2
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  margin-top: 6px;
   font-family: var(--ff-primary);
   font-size: 2rem;
 }
