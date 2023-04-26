@@ -9,7 +9,6 @@ body {
     background-repeat: no-repeat;
     min-height: 80vh !important;
     overflow: hidden !important;
-
     margin: 0;
     padding: 30px 20px 20px;
     font-family: Consolas, sans-serif;
@@ -22,14 +21,11 @@ li{
 
 .nav-links {
     display: flex;
-
     justify-content: space-around;
     background-color: #ccdcf692;
     padding: 20px 0;
     border-radius: 15px;
     margin-bottom: 20px;
-
-    /* padding: 0px auto; */
 }
 
 .nav-links a {
