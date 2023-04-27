@@ -151,4 +151,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-  
+  p{
+    height: 35px;
+    width: 75px;
+  }
