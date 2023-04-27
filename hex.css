@@ -72,6 +72,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  min-width: 400px;
 }
 
 
@@ -153,7 +154,7 @@ main {
   background: var(--clr-black);
 }
 
-#hex-container{
+.hex-container{
   width: 80%;
   margin: 2rem auto;
 }
