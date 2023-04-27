@@ -119,14 +119,19 @@ main {
 .container h2 {
   background: var(--clr-black);
   color: var(--clr-white);
-  padding: 1rem;
-  border-radius: var(--radius);
-  margin-bottom: 2.5rem;
+  padding: 4rem 3rem;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .color {
+  letter-spacing: 1.2;
+  font-weight: bolder;
+  font-size: 25px;
   color: var(--clr-primary-5);
 }
-.btn-hero {
+.btn-hero{
   font-family: var(--ff-primary);
   text-transform: uppercase;
   background: transparent;
@@ -141,6 +146,8 @@ main {
   border-radius: var(--radius);
   font-size: 1rem;
   padding: 0.75rem 5rem;
+  width: 80%;
+  margin: 0 auto 10px;
 }
 .btn-hero:hover {
   color: var(--clr-white);
