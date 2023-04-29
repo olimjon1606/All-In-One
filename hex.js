@@ -80,7 +80,7 @@ function getCols() {
 
         const newCol = document.createElement("li");
         newCol.classList.add("col-item");
-        newCol.innerHTML = `<p style="color:${col};border: 1px solid black; padding: 5px;border-radius: 2px;background-color:#fff;">${col}</p>`
+        newCol.innerHTML = `<p style="color:${col};border: 1px solid black;border-radius: 2px;background-color:#fff;">${col}</p>`
         colDiv.appendChild(newCol);
 
         const deleteCols = document.createElement("span");
