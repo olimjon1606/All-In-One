@@ -1,10 +1,10 @@
 :root {
-  
+
     --clr-primary-1: hsl(205, 86%, 17%);
     --clr-primary-2: hsl(205, 77%, 27%);
     --clr-primary-3: hsl(205, 72%, 37%);
     --clr-primary-4: hsl(205, 63%, 48%);
-  
+
     --clr-primary-5: hsl(205, 78%, 60%);
     /* lighter shades of primary color */
     --clr-primary-6: hsl(205, 89%, 70%);
@@ -12,12 +12,12 @@
     --clr-primary-8: hsl(205, 86%, 81%);
     --clr-primary-9: hsl(205, 90%, 88%);
     --clr-primary-10: hsl(205, 100%, 96%);
-   
+
     --clr-grey-1: hsl(209, 61%, 16%);
     --clr-grey-2: hsl(211, 39%, 23%);
     --clr-grey-3: hsl(209, 34%, 30%);
     --clr-grey-4: hsl(209, 28%, 39%);
- 
+
     --clr-grey-5: hsl(210, 22%, 49%);
     --clr-grey-6: hsl(209, 23%, 60%);
     --clr-grey-7: hsl(211, 27%, 70%);
@@ -60,15 +60,18 @@ body {
     margin-bottom: 20px;
 }
 
-.nav-links a {
+.nav-links .nav-btn {
     text-decoration: none;
     font-size: 20px;
     color: #5f9341;
     text-shadow:
         0 0 2px #5f9341;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-.nav-links a:hover {
+.nav-links .nav-btn:hover {
     color: red;
     text-shadow:
         0 0 2px red;
@@ -161,12 +164,14 @@ span:hover {
     text-shadow:
         0 0 5px red;
     cursor: pointer;
-
 }
 
 .link {
     display: flex;
     justify-content: space-between;
+}
+.hide{
+    display: none;
 }
 
 /* hex color */
