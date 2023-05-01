@@ -239,20 +239,20 @@ span:hover {
 
 /* style-todo */
 
-.main-todo-container header {
+.main-container header {
     font-size: 1.5rem;
 }
 
-.main-todo-container header,
-.main-todo-container form {
+.main-container header,
+.main-container form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-todo-container form .todo-input,
-.main-todo-container form button {
+.main-container form .todo-input,
+.main-container form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
@@ -260,31 +260,31 @@ span:hover {
     margin: 0;
 }
 
-.main-todo-container form button {
+.main-container form button {
     color: #d88771;
     background: rgb(217, 216, 216);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.main-todo-container form button:hover {
+.main-container form button:hover {
     background: #d88771;
     color: rgb(217, 216, 216);
 }
 
-.main-todo-container .todo-container {
+.main-container .todo-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.main-todo-container .todo-list {
+.main-container .todo-list {
     min-width: 30%;
     list-style: none;
 }
 
-.main-todo-container .todo {
+.main-container .todo {
     margin: 0.5rem;
     background: rgb(217, 216, 216);
     color: black;
@@ -296,11 +296,11 @@ span:hover {
 
 }
 
-.main-todo-container .todo li {
+.main-container .todo li {
     flex: 1;
 }
 
-.main-todo-container .trash-btn,
+.main-container .trash-btn,
 .complete-btn {
     background: #ff6f47;
     border: none;
@@ -310,11 +310,11 @@ span:hover {
     font-size: 1rem;
 }
 
-.main-todo-container .complete-btn {
+.main-container .complete-btn {
     background: rgb(13, 187, 13);
 }
 
-.main-todo-container .todo-item {
+.main-container .todo-item {
     padding: 0rem 0.5rem;
 }
 
@@ -323,17 +323,17 @@ span:hover {
     pointer-events: none;
 }
 
-.main-todo-container .completed {
+.main-container .completed {
     text-decoration: line-through;
     opacity: 0.5;
 }
 
-.main-todo-container .fall {
+.main-container .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
 
-.main-todo-container select {
+.main-container select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -341,20 +341,20 @@ span:hover {
     border: none;
 }
 
-.main-todo-container .select {
+.main-container .select {
     margin: 1rem;
     position: relative;
     overflow: hidden;
 }
 
-.main-todo-container select {
+.main-container select {
     color: #ff6f47;
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
 }
 
-.main-todo-container .select::after {
+.main-container .select::after {
     content: "\25BC";
     position: absolute;
     background: #ff6f47;
@@ -366,16 +366,16 @@ span:hover {
 
 }
 
-.main-todo-container .select:hover::after {
+.main-container .select:hover::after {
     background: white;
     color: #ff6f47;
 }
 
-.main-todo-container .filter-todo {
+.main-container .filter-todo {
     background-color: rgb(217, 216, 216);
 }
 
-.main-todo-container .section {
+.main-container .section {
     width: 100%;
     position: relative;
 }
