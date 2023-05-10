@@ -13,7 +13,6 @@ filterOption.addEventListener('click', filterTodo)
 function addTodo(event){
     // prevent from submitting
     event.preventDefault()
-    //todo div
     const todoDiv = document.createElement('div')
     todoDiv.classList.add('todo')
     const newTodo = document.createElement('li')
