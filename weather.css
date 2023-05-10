@@ -13,12 +13,10 @@ body {
     padding: 30px 20px 20px;
     font-family: Consolas, sans-serif;
     min-width: 400px;
-
 }
 li{
     list-style: none;
 }
-
 .nav-links {
     display: flex;
     justify-content: space-around;
