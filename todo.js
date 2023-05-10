@@ -23,7 +23,6 @@ function addTodo(event){
     todoDiv.appendChild(newTodo)
     //add todo to local storage
     saveLocalTodos(todoInput.value)
-    //check mark
     const completedButton = document.createElement('button')
     completedButton.innerHTML = '<i class="fas fa-check"></i>'
     completedButton.classList.add("complete-btn")
