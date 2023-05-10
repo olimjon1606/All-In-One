@@ -99,7 +99,6 @@ function getTodos(){
         //todo div
     const todoDiv = document.createElement('div')
     todoDiv.classList.add('todo')
-    //create li
     const newTodo = document.createElement('li')
     newTodo.innerText = todo
     newTodo.classList.add('todo-item')
