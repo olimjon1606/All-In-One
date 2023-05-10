@@ -21,7 +21,6 @@ function addTodo(event){
     newTodo.innerText = todoInput.value
     newTodo.classList.add('todo-item')
     todoDiv.appendChild(newTodo)
-    //add todo to local storage
     saveLocalTodos(todoInput.value)
     const completedButton = document.createElement('button')
     completedButton.innerHTML = '<i class="fas fa-check"></i>'
