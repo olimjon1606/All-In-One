@@ -26,7 +26,6 @@ function addTodo(event){
     completedButton.classList.add("complete-btn")
     todoDiv.appendChild(completedButton)
 
-    //delete mark
     const trashButton = document.createElement('button')
     trashButton.innerHTML = '<i class="fas fa-trash"></i>'
     trashButton.classList.add("trash-btn")
